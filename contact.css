@@ -1,0 +1,331 @@
+
+header {
+    position: sticky;
+    top: 0;
+    background: #0a0a0a;
+    color: #fff;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensures the header stays on top of other content */
+    width: 100%;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Add this line */
+    width: 100%; /* Ensure the ul spans the full width of the nav */
+    padding: 1000; /* Ensures there is no default padding */
+}
+
+
+header nav ul li {
+    padding: 10.5px 35px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+header nav ul li a:hover {
+    color: #15ffcc; /* Change to your preferred hover color */
+}
+
+nav {
+    width: 100%; /* Full width to ensure it can center contents within the header */
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block; /* Allows the list to resize according to its content */
+    margin: 0; /* Removes default margin */
+    padding: 10px; /* Removes default padding */
+}
+.logo {
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the glow effect */
+}
+
+.logo:hover {
+    box-shadow: 0 0 15px rgba(5, 255, 255, 0.75); /* White glow */
+}
+
+/* contact */
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100rem;
+    margin: auto;
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    background: linear-gradient(267deg, #15ffec 1%, #10fff3 100%);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.animation {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.animation:hover {
+    transform: scale(1.03);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.text-effect {
+    background: linear-gradient(267deg, #09ffd6 1%, #12ffff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container {
+    flex-direction: column;
+    justify-content: fixed;
+    gap: 4rem;
+    margin: 4rem 10rem 10rem;
+}
+
+.container-title {
+    position: relative;
+}
+
+.container-title h2 {
+    padding: 0 2rem;
+    font-size: 2.5rem;
+}
+
+.container-title img {
+    position: absolute;
+    bottom: -1rem;
+    right: 0;
+    z-index: -1;
+    width: 6rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 7rem;
+    gap: 3rem;
+}
+
+.grid-container img {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.grid-container img {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.contact-section {
+    gap: 4rem;
+}
+
+.contact-left {
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-left p {
+    line-height: 2rem;
+}
+
+.contact-details {
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-detail {
+    align-items: fixed;
+    gap: 1rem;
+}
+
+.contact-right {
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.contact-right input,
+.contact-right textarea {
+    border: none;
+    width: 20rem;
+    height: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    color: #000;
+}
+
+@media (max-width: 668px) {
+    .contact-section {
+        flex-direction: column;
+    }
+}
+
+.review-form {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-form input, .review-form select, .review-form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.review-form button {
+    background-color: #11ffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #05ffd5;
+}
+.review-display {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.review-form input,
+.review-form textarea {
+    color: #000000; /* Sets the text color to black */
+    background-color: #ffffff; /* Optional: Sets a white background for better contrast */
+    border: 1px solid #ccc; /* Optional: Adds a light grey border */
+    padding: 8px; /* Adds some padding inside the input fields and textarea */
+}
+
+.review-form input::placeholder,
+.review-form textarea::placeholder {
+    color: #ffffff; /* Lighter color for placeholders */
+}
+.review-form select {
+    color: #000000; /* Text color inside the dropdown */
+    background-color: #ffffff; /* Light grey background for the dropdown */
+    border: 1px solid #ffffff; /* Subtle border color */
+    padding: 8px; /* Padding for better text alignment */
+    width: 100%; /* Ensures the dropdown takes up the full container width */
+}
+
+.review-form select:hover {
+    background-color: #000000; /* Slightly darker background on hover */
+}
+
+.review-form select:focus {
+    border-color: #000000; /* Highlight color when the dropdown is focused */
+}
+.content-box {
+    background-color: #0a0a0a; /* or any color you prefer */
+    color: #fff; /* for text color */
+    padding: 20px;
+    max-width: 1200px; /* or any max width you prefer */
+    margin: auto; /* centers the box horizontally */
+    overflow: hidden; /* ensures all content is contained within the box */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional: adds shadow for better visibility */
+    border-radius: 10px; /* optional: rounds the corners of the box */
+}
+footer {
+    background-color: #0a0a0a; /* Dark background */
+    color: #fff; /* White text */
+    display: flex;
+    justify-content: space-between; /* Align items on opposite ends */
+    align-items: center; /* Vertical alignment */
+    padding: 20px 50px; /* Padding around the content */
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-left p {
+    margin: 20px 0; /* Small margin between text lines for better readability */
+}
+
+.footer-logo {
+    width: 300px; /* Adjust size as needed */
+    margin-bottom: 10px; /* Space below the logo */
+}
+
+.footer-right a {
+    color: #fff; /* Ensures links are white */
+    text-decoration: none; /* No underline */
+    margin-left: 20px; /* Space between links */
+    font-size: 16px; /* Font size for readability */
+}
+
+.footer-right a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: fixed;
+    }
+
+    .footer-right {
+        margin-top: 20px; /* Add space between the sections */
+    }
+
+    .footer-right a {
+        margin: 10px; /* More space around links on small screens */
+    }
+}
+.footer-bottom {
+    text-align: center;
+    color: #aaa; /* Light gray color for less emphasis */
+    font-size: 14px; /* Smaller font size */
+    padding: 10px 0; /* Padding for spacing */
+    border-top: 1px solid #333; /* Optional: adds a subtle line above the text */
+    width: 100%; /* Ensures it spans the width of the footer */
+
+}
+
+.footer-bottom a {
+    color: #ccc; /* Lighter color for the link */
+    text-decoration: none; /* No underline */
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline; /* Underline on hover */
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+}

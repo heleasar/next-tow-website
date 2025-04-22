@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body, html {
+    background-image: url('assets/background.png'); /* Replace with your actual image URL */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #000000;
+    color: white;
+   
+}
+main {
+    margin-top: 100px; /* Adjust this value based on the actual height of your header */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #000;
+    color: #fff;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensures the header stays on top of other content */
+    width: 100%;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Add this line */
+    width: 100%; /* Ensure the ul spans the full width of the nav */
+    padding: 1000; /* Ensures there is no default padding */
+}
+
+
+header nav ul li {
+    padding: 10.5px 35px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+header nav ul li a:hover {
+    color: #15ffcc; /* Change to your preferred hover color */
+}
+
+nav {
+    width: 100%; /* Full width to ensure it can center contents within the header */
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block; /* Allows the list to resize according to its content */
+    margin: 0; /* Removes default margin */
+    padding: 10px; /* Removes default padding */
+}
+.logo {
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the glow effect */
+}
+
+.logo:hover {
+    box-shadow: 0 0 15px rgba(5, 255, 255, 0.75); /* White glow */
+}
+
+.content-box {
+    background-image: url('assets/background.png'); /* Replace with your actual image URL */
+    background-color: #000000; /* or any color you prefer */
+    color: #fff; /* for text color */
+    padding: 20px;
+    max-width: 1200px; /* or any max width you prefer */
+    margin: auto; /* centers the box horizontally */
+    overflow: hidden; /* ensures all content is contained within the box */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional: adds shadow for better visibility */
+    border-radius: 10px; /* optional: rounds the corners of the box */
+}
+
+.hero-image {
+    justify-content: center;
+    
+}
+.hero-image img {
+    transition: opacity 2.5s ease-in-out;
+    opacity: 0;  /* start with the image transparent to see the fade-in effect */
+}
+.dynamicImage {
+    width: 100%; /* or 1210px based on your design */
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    animation: slideShow 12s infinite;
+}
+
+@keyframes slideShow {
+    0% { background-image: url('assets/logo.png'); }
+    33% { background-image: url('assets/tow7.png'); }
+    34% { background-image: url('assets/car.jpg'); }
+    66% { background-image: url('assets/car9.jpg'); }
+    67% { background-image: url('assets/car8.jpg'); }
+    100% { background-image: url('assets/car4.jpg'); }
+}
+
+
+
+#hero {
+    
+    background-size: cover;
+    background-position: center;
+    /* This sets the height of the header to be full viewport height */
+    color: white; /* Sets the text color to white */
+    padding: 10px;
+    margin-top: -20px;
+}
+
+#hero h1 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#hero p.sub-title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: -35px;
+    font-family: "Montserrat", Sans-serif;
+}
+
+/* Adjust the description text size */
+.description {
+    max-width: 8000px;
+    margin: 20px auto;
+    font-size: 1.0rem;
+    text-align: fixed;
+    line-height: 2.0;
+    padding: 10px;
+    color: #ffffff;
+}
+
+/* Services Section */
+.services-container {
+    display: flex;
+    justify-content: fixed;
+    gap: 130px;
+    padding: 30px 0;
+}
+
+.service-card {
+    text-align: fixed;
+    width: 280px;
+}
+
+.service-card img {
+    width: 140%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service-card h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #15efff;
+    margin-top: 10px;
+}
+.content-box {
+    background-color: #000000; /* or any color you prefer */
+    color: #fff; /* for text color */
+    padding: 20px;
+    max-width: 1200px; /* or any max width you prefer */
+    margin: auto; /* centers the box horizontally */
+    overflow: hidden; /* ensures all content is contained within the box */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional: adds shadow for better visibility */
+    border-radius: 10px; /* optional: rounds the corners of the box */
+}
+.content-box {
+    background-color: #000000; /* or any color you prefer */
+    color: #fff; /* for text color */
+    padding: 20px;
+    max-width: 1200px; /* or any max width you prefer */
+    margin: auto; /* centers the box horizontally */
+    overflow: hidden; /* ensures all content is contained within the box */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional: adds shadow for better visibility */
+    border-radius: 10px; /* optional: rounds the corners of the box */
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: fixed;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+}
+
+.testimonial-text {
+    width: 45%;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.testimonial-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.rating span {
+    color: gold;
+    font-size: 1.2rem;
+}
+
+.author {
+    display: flex;
+    align-items: fixed;
+    margin-top: 10px;
+}
+
+.author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.testimonial-image {
+    width: 65%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.testimonial-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .testimonial-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-text, .testimonial-image {
+        width: 100%;
+    }
+
+    .author {
+        justify-content: center;
+    }
+}
+.content-box {
+    background-color: #000000; /* or any color you prefer */
+    color: #fff; /* for text color */
+    padding: 20px;
+    max-width: 1200px; /* or any max width you prefer */
+    margin: auto; /* centers the box horizontally */
+    overflow: hidden; /* ensures all content is contained within the box */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* optional: adds shadow for better visibility */
+    border-radius: 10px; /* optional: rounds the corners of the box */
+}
+footer {
+    background-color: #000; /* Dark background */
+    color: #fff; /* White text */
+    display: flex;
+    justify-content: space-between; /* Align items on opposite ends */
+    align-items: center; /* Vertical alignment */
+    padding: 20px 50px; /* Padding around the content */
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-left p {
+    margin: 20px 0; /* Small margin between text lines for better readability */
+}
+
+.footer-logo {
+    width: 300px; /* Adjust size as needed */
+    margin-bottom: 10px; /* Space below the logo */
+    align-items: fixed;
+}
+
+.footer-right a {
+    color: #fff; /* Ensures links are white */
+    text-decoration: none; /* No underline */
+    margin-left: 20px; /* Space between links */
+    font-size: 16px; /* Font size for readability */
+}
+
+.footer-right a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: fixed;
+    }
+
+    .footer-right {
+        margin-top: 20px; /* Add space between the sections */
+    }
+
+    .footer-right a {
+        margin: 10px; /* More space around links on small screens */
+    }
+}
+.footer-bottom {
+    text-align: center;
+    color: #aaa; /* Light gray color for less emphasis */
+    font-size: 14px; /* Smaller font size */
+    padding: 10px 0; /* Padding for spacing */
+    border-top: 1px solid #333; /* Optional: adds a subtle line above the text */
+    width: 100%; /* Ensures it spans the width of the footer */
+
+}
+
+.footer-bottom a {
+    color: #ccc; /* Lighter color for the link */
+    text-decoration: none; /* No underline */
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline; /* Underline on hover */
+    overflow-x: hidden; /* Hides horizontal scrollbar */
+}
+
+
+
+
+
+
+
