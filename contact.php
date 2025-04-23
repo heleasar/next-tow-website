@@ -135,14 +135,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="footer-left">
             <img src="/assets/logo.png" alt="Next Tow & Recovery Logo" class="footer-logo">
             <p>Next Tow & Recovery LLC</p>
-            <p>4415 Shaver St. Pasadena, TX USA</p>
             <p>kevinvaladez@gmail.com</p>
             <p>+1 (832) 800 2131</p>
         </div>
         <div class="footer-right">
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <a href="https://next-tow-recovery.vercel.app/#home">Home</a>
+            <a href="https://next-tow-recovery.vercel.app/#services">Services</a>
+            <a href="https://next-tow-recovery.vercel.app/#contact">Contact</a>
         </div>
     </footer>
 
