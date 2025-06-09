@@ -1,8 +1,13 @@
-
+body {
+    background-color: #000000 !important;; /* Black */
+    color: #ffffff; /* White text color */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
 header {
     position: sticky;
     top: 0;
-    background: #0a0a0a;
+    background: #000000;
     color: #fff;
     padding: 1rem 0rem;
     display: flex;
@@ -31,7 +36,7 @@ header nav ul li a {
     font-weight: bold;
 }
 header nav ul li a:hover {
-    color: #15ffcc; /* Change to your preferred hover color */
+    color: #20e7ff; /* Change to your preferred hover color */
 }
 
 nav {
@@ -51,7 +56,52 @@ nav ul {
 .logo:hover {
     box-shadow: 0 0 15px rgba(5, 255, 255, 0.75); /* White glow */
 }
-
+.phone-number a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: -1rem;
+    position: absolute; /* or fixed */
+    right: 20px; /* Move it left from the edge */
+    white-space: nowrap;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 50vh;              /* adjust height as you like */
+    overflow: hidden;
+  }
+  
+  .hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 99%;               /* stretch to fill width */
+    height: auto;
+    min-height: 10%;          /* ensure it covers the container vertically */
+    transform: translate(-50%, -50%);
+    object-fit: fill;         /* crop to fill without distortion */
+    z-index: 0;
+  }
+  
+  /* Optional: dark overlay so white text pops */
+  .hero-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #fff;
+  }
+  
 /* contact */
 * {
     margin: 0;
@@ -76,7 +126,7 @@ body {
     padding: 1rem 2rem;
     border-radius: 2rem;
     border: none;
-    background: linear-gradient(267deg, #15ffec 1%, #10fff3 100%);
+    background: linear-gradient(267deg, #20e7ff 1%, #20e7ff 100%);
     font-size: 1.2rem;
     text-decoration: none;
 }
@@ -96,7 +146,7 @@ body {
 }
 
 .text-effect {
-    background: linear-gradient(267deg, #09ffd6 1%, #12ffff 100%);
+    background: linear-gradient(267deg, #20e7ff 1%, #20e7ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -211,7 +261,7 @@ body {
 }
 
 .review-form button {
-    background-color: #11ffff;
+    background-color: #20e7ff;
     color: rgb(0, 0, 0);
     border: none;
     padding: 10px;
@@ -219,7 +269,7 @@ body {
 }
 
 .review-form button:hover {
-    background-color: #05ffd5;
+    background-color: #20e7ff;
 }
 .review-display {
     background-color: #ffffff;
@@ -254,7 +304,7 @@ body {
     border-color: #000000; /* Highlight color when the dropdown is focused */
 }
 .content-box {
-    background-color: #0a0a0a; /* or any color you prefer */
+    background-color: #000000; /* or any color you prefer */
     color: #fff; /* for text color */
     padding: 20px;
     max-width: 1200px; /* or any max width you prefer */
@@ -264,7 +314,7 @@ body {
     border-radius: 10px; /* optional: rounds the corners of the box */
 }
 footer {
-    background-color: #0a0a0a; /* Dark background */
+    background-color: #000000; /* Dark background */
     color: #fff; /* White text */
     display: flex;
     justify-content: space-between; /* Align items on opposite ends */

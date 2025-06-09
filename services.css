@@ -3,6 +3,7 @@ body {
     color: #ffffff; /* White text color */
     font-family: Arial, sans-serif;
     text-align: center;
+    overflow-x: hidden;
 }
 header {
     position: sticky;
@@ -36,7 +37,7 @@ header nav ul li a {
     font-weight: bold;
 }
 header nav ul li a:hover {
-    color: #15ffcc; /* Change to your preferred hover color */
+    color: #20e7ff; /* Change to your preferred hover color */
 }
 
 nav {
@@ -56,18 +57,43 @@ nav ul {
 .logo:hover {
     box-shadow: 0 0 15px rgba(5, 255, 255, 0.75); /* White glow */
 }
-
-body {
+.phone-number a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: -1rem;
+    position: absolute; /* or fixed */
+    right: 200px; /* Move it left from the edge */
+    white-space: nowrap;
+}
+.hours {
+    font-size: 12px;
+    opacity: 0.8;
+  }
+  body {
     background-color: black;
     color: white;
     text-align: center;
     font-family: Arial, sans-serif;
 }
+.image-container {
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px;
+    border-radius: 2px;
+    box-shadow: 0 0 20px #00ffccaa;
+  }
+  
         .slider-container {
             width: 100%;
             margin: auto;
             overflow: hidden;
             position: relative;
+            backdrop-filter: blur(6px);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2px;
+            border-radius: 2px;
+            box-shadow: 0 0 200px #00ffccaa;
         }
         .slider {
             display: flex;
@@ -84,7 +110,7 @@ body {
         }
         .content-box {
             background-image: url('assets/background.png'); /* Path to your image */
-            background-color: #000000; /* or any color you prefer */
+            background-color: #ffffff; /* or any color you prefer */
             color: #fff; /* for text color */
             padding: 20px;
             max-width: 1200px; /* or any max width you prefer */
@@ -141,14 +167,14 @@ body {
                 display: inline-block;
                 padding: 10px 20px;
                 margin-top: 10px;
-                background-color: #03f7ff; /* Example blue */
+                background-color: #20e7ff; /* Example blue */
                 color: white;
                 text-decoration: none; /* Removes underline from links */
                 border-radius: 5px; /* Rounded corners for the button */
             }
             
             .btn:hover {
-                background-color: #08dacf; /* Darker blue on hover */
+                background-color: #20e7ff; /* Darker blue on hover */
             }
             @media (max-width: 768px) {
                 .service-item {
@@ -177,7 +203,7 @@ body {
             }
             
             .section-heading {
-                color: #00d1ec; /* Bright blue color for headings */
+                color: #20e7ff; /* Bright blue color for headings */
                 margin-bottom: 20px;
                 text-transform: uppercase;
                 font-size: 30px;
@@ -308,7 +334,7 @@ body {
         display: inline-block;
         margin-top: 10px;
         padding: 10px 20px;
-        background-color: #00e6ff;
+        background-color: #eff3f3;
         color: #000;
         font-weight: bold;
         border: none;
@@ -318,7 +344,7 @@ body {
       }
       
       .contact-button:hover {
-        background-color: #00bcd4;
+        background-color: #ffffff;
         color: #fff;
       }
       
@@ -470,10 +496,10 @@ body {
             color: #ccc; /* Lighter color for the link */
             text-decoration: none; /* No underline */
         }
-        
         .footer-bottom a:hover {
             text-decoration: underline; /* Underline on hover */
         }
+        
         
         
         

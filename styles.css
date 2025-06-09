@@ -7,6 +7,7 @@ body, html {
     font-family: 'Arial', sans-serif;
     background: #000000;
     color: white;
+    overflow-x: hidden;
    
 }
 main {
@@ -45,7 +46,7 @@ header nav ul li a {
     font-weight: bold;
 }
 header nav ul li a:hover {
-    color: #15ffcc; /* Change to your preferred hover color */
+    color: #20e7ff; /* Change to your preferred hover color */
 }
 
 nav {
@@ -65,7 +66,20 @@ nav ul {
 .logo:hover {
     box-shadow: 0 0 15px rgba(5, 255, 255, 0.75); /* White glow */
 }
-
+.phone-number a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: -1rem;
+    position: absolute; /* or fixed */
+    right: 200px; /* Move it left from the edge */
+    white-space: nowrap;
+  }
+  .hours {
+    font-size: 12px;
+    opacity: 2.8;
+    right: 2px; /* Move it left from the edge */
+  }
 .content-box {
     background-image: url('assets/background.png'); /* Replace with your actual image URL */
     background-color: #000000; /* or any color you prefer */
@@ -157,6 +171,7 @@ nav ul {
 .service-card {
     text-align: fixed;
     width: 280px;
+    color: white;
 }
 
 .service-card img {
@@ -168,8 +183,20 @@ nav ul {
 .service-card h2 {
     font-size: 1.6rem;
     font-weight: bold;
-    color: #15efff;
+    color: #20e7ff;
     margin-top: 10px;
+}
+.service-card a {
+    text-decoration: none;
+    color: #ebfa66;
+    font-size: 1.8rem;
+    margin-top: 10px;
+    display: inline-block; /* Makes the link behave like a block element */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+.service-card a:hover {
+    color: #fff; /* Change to your preferred hover color */
+    text-decoration: underline; /* Underline on hover for better UX */
 }
 .content-box {
     background-color: #000000; /* or any color you prefer */
